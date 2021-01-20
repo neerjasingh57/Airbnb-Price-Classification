@@ -22,13 +22,13 @@ Taking a first look at the basic descriptives of our dataset, we found that, out
 
 **ANALYSIS**
 
-* *Budget-friendly Classification* *
+*Budget-friendly Classification*
 
 After running all 5 classification models to identify budget-friendly apartments (<$70 per night) these were our results:
 
 While the k-NN model had the highest AUC at .91, Random Forest also received a high AUC of.907 with the highest values overall for Accuracy, Recall, Precision, and the F1 Score. Our k-NN model's error count was the lowest with k = 25 and, for Random Forest, ntrees = 50. Due to these results, we selected Random Forest as the best performing model when incorporating the variables neighborhood group, room type, the number of minimum nights, the number of reviews, the number of listings a host has, availability, and distance from Times Square. Using Random Forest, we were also able to analyze feature importance and found that room type and distance from Times Square were the most important features that had the highest impact on price. 
 
-* *High-end Classification* *
+*High-end Classification*
 
 After running all 5 classification models to identify high-end apartments (>$175 per night) these were our results:
 
